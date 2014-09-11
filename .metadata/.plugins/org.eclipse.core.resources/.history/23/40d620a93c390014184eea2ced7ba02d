@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+
+/**
+ * @author jchacko
+ *
+ */
+public class CCBA {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double debt, iRate;
+		
+		double total;
+		
+		debt = 350;
+		
+		iRate = 0.6;
+		
+		total = debt + (debt * iRate);
+		
+		
+		System.out.println("Now you owe..." debt + (debt * iRate));
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author jchacko
+ *
+ */
+public class CCBA {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    double rate;
+	    double month;
+	    double amount;
+	   
+	    
+	    System.out.println("Lets see the damage this time...");
+
+		Scanner keyboard = new Scanner(System.in);
+
+	    System.out.println("How much debt have you accumulated?");
+	    amount = keyboard.nextDouble();
+
+	    System.out.println("What's your interest rate?");
+	    rate = keyboard.nextDouble();
+	    rate = rate/100;
+
+	    System.out.println("How many months?");
+	    month = keyboard.nextInt(+ 5);
+
+
+	    for (int x = 1; x < month; x++){
+	        amount = amount * Math.pow(1.0 + rate, month);
+	                }
+	    {	    System.out.println("So.. your outstanding debt of " + month + " months has amounted to $ " + amount + " . At the current interest rate of " + rate + " you now owe us " + amount + ". Have a good day and please continue Banking with Chase of America "  );
+
+
+	    String go = "n";
+	    do{
+	        System.out.println("Continue Y/N");
+	        go = keyboard.nextLine();
+	    }while (go.equals("Y") || go.equals("y"));
+	}
+	    
+

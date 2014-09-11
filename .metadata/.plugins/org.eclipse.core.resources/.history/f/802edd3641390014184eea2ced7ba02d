@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author jchacko
+ *
+ */
+public class CCBA {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	    double rate;
+	    double month;
+	    double amount;
+	   
+	    
+	    System.out.println("Lets see the damage this time...");
+
+		Scanner keyboard = new Scanner(System.in);
+
+	    System.out.println("How much debt have you accumulated?");
+	    amount = keyboard.nextDouble();
+
+	    System.out.println("What's your interest rate?");
+	    rate = keyboard.nextDouble();
+	    rate = rate/100;
+
+	    System.out.println("How many months?");
+	    month = keyboard.nextInt(+ 5);
+
+
+	    for (int x = 1; x < month; x++){
+	        amount = amount * Math.pow(1.0 + rate, month);
+	    
+	       {	   System.out.println("For " + month + " years an initial " + amount + 
+	    	    " cost compounded at a rate of " + rate + " will grow to " + 
+	    	    (amount * Math.pow(1.0 + rate, month)));
+
+	    String go = "n";
+	    do{
+	        System.out.println("Continue Y/N");
+	        go = keyboard.nextLine();
+	    }while (go.equals("Y") || go.equals("y"));
+	   }
+	    
+
