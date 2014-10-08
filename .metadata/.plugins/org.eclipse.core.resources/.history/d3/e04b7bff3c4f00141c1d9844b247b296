@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+import.
+/**
+ * @author Josh
+ *
+ */
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+			Scanner filereader = new Scanner (new File("users/Josh/desktop/cs1006"));
+				System.out.println(filereader.nextLine());
+				filereader.close();
+	}
+
+}
