@@ -13,7 +13,7 @@ public class CalcTool {
 	 * @param close
 	 * 
 	 */
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Scanner filereader = new Scanner (new File("/Users/Josh/Desktop/input.txt"));
@@ -22,8 +22,15 @@ public class CalcTool {
 		System.out.println(filereader.next());
 	}
 	
-		System.out.println(filereader.nextLine());
-		filereader.close();
+	if(filereader.hasNext("Checking"));
+	System.out.println(filereader.nextLine());
 	}
-		
+	
+	
+	double CheckingBalance = 1540.
+	{ CheckingBalance = filereader.nextInt();
 }
+
+	String account=filereader.next();
+	
+	filereader.close();

@@ -32,6 +32,8 @@ public class CCBA {;
 		    System.out.println("How many months?");
 		    month = keyboard.nextInt();
 		    
+		  
+		    
 	    keyboard.close();
 	}
 }
