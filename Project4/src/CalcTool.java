@@ -14,7 +14,7 @@ public class CalcTool {
 	 * 
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	 	// TODO Auto-generated method stub
 		
 		Scanner filereader = new Scanner (new File("/Users/Josh/Desktop/input.txt"));
 		
@@ -27,10 +27,25 @@ public class CalcTool {
 	}
 	
 	
-	double CheckingBalance = 1540.
-	{ CheckingBalance = filereader.nextInt();
+	//double CheckingBalance = 1540;
+	//{ CheckingBalance = filereader.nextInt();
 }
 
-	String account=filereader.next();
+	//String account=filereader.next();
+	//System.out.println(filereader.hasnext());
 	
-	filereader.close();
+	//filereader.close();
+	
+	public static double processChecking(String line)   { 
+			double amount;
+			
+		Scanner linereader = new Scanner(line);
+		while(linereader.hasNext() && !linereader.hasNextDouble())  {
+			amount = linereader.nextDouble();
+			if(line.contains("withdrawal"));
+				amount *= -1;
+		}
+			return amount;
+	}
+		
+} 

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.*;
+/**
+ * @author Josh
+ *
+ */
+public class PokemonQuiz {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			double GenOne = 0;
+			double GenTwo = 0;
+			
+			System.out.println("Do you like pokemon?! Yes or No.");
+				Scanner console = new Scanner("Yes or No");
+
+				
+				
+				
+	}
+
+}
