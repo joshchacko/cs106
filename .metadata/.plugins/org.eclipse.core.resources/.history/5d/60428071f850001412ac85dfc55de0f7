@@ -30,7 +30,7 @@ public class PokemonQuiz {
 					keyboard.next();
 					System.out.println("Don't mess around!");
 					System.out.print("Do you like pokemon?! Yes or No");
-					System.out.print(ans);
+				
 			    if(ans.equals("Yes")){
 			    //temporary
 			    	System.out.println("Good job bitchface");
