@@ -1,0 +1,39 @@
+import java.util.*;
+import java.util.Scanner;
+/**
+ * @author Josh
+ *
+ */
+public class PokemonQuiz {
+	
+	/**
+	 * @param args
+	 * @param keyboard 
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double pkmnmaster = 0;
+		double loser = 0;
+		String ans = null;
+
+		System.out.println("Welcome to the pokemon quiz!");
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println("Do you like pokemon?! Yes or No");
+		ans = keyboard.nextLine();
+		
+		while (!ans.equalsIgnoreCase("Yes") && !ans.equalsIgnoreCase("No"))
+		{
+			if(ans.equals("Yes")){
+				System.out.println("Good! Lets get started");
+			} else { 
+				System.out.print("Your journey as a Master has ended(You suck!). Please try again!");
+			}
+			
+		}
+		  
+	
+		
+	}
+}
