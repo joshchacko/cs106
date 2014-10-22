@@ -25,8 +25,7 @@ public class PokemonQuiz {
 			System.out.println("Do you like pokemon?! Yes or No");
 			ans = keyboard.nextLine();
 		} while (!ans.equalsIgnoreCase("Yes") && !ans.equalsIgnoreCase("No"));
-		
-		while (ans.equalsIgnoreCase("No")) {
+		if (ans.equalsIgnoreCase("No")) {
 			System.out.println("Boo! No Quiz for you(Restart the program to retake the quiz)");
 		}
 

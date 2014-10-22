@@ -21,15 +21,15 @@ public class PokemonQuiz {
 		System.out.println("Welcome to the pokemon quiz!");
 		Scanner keyboard = new Scanner(System.in);
 
-		do {
-			System.out.println("Do you like pokemon?! Yes or No");
-			ans = keyboard.nextLine();
-		} while (!ans.equalsIgnoreCase("Yes") && !ans.equalsIgnoreCase("No"));
+		System.out.println("Do you like pokemon?! Yes or No");
+		ans = keyboard.nextLine();
 		
-		while (ans.equalsIgnoreCase("No")) {
-			System.out.println("Boo! No Quiz for you(Restart the program to retake the quiz)");
+		while (!ans.equalsIgnoreCase("Yes") && !ans.equalsIgnoreCase("No"))
+		{
+			while(ans.equals("No")){
+				System.out.println("Boo! No Quiz for you(Restart the program to retake the quiz)");
+			}
 		}
-
 		System.out.println("Lets go! Now the real quiz begins.");  
 			ans = keyboard.nextLine();
 			

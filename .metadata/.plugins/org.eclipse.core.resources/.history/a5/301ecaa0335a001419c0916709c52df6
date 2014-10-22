@@ -16,9 +16,9 @@ public class CalcTool {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double checking = 0.0;
-		double savings = 0.0;
-		double credit = 0.0;
+		int checking = 0;
+		int savings = 0;
+		int credit = 0;
 
 		Scanner filereader = null;
 		try {
@@ -29,13 +29,12 @@ public class CalcTool {
 		}
 
 		while (filereader.hasNext()) {
-			
-			// Skip date
 			filereader.next();
-
-			// Determine account type
-			String accountType = filereader.next(); 
-			if (accountType.equals("Credit")) {
+			// System.out.println(filereader.next());
+			
+			//String next = filereader .next();
+			//System.out.println(next);
+			if (filereader.next().equals("Credit")) {
 				System.out.println(filereader.next());
 			}
 		}
