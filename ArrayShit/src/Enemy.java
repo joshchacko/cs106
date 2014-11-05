@@ -12,6 +12,6 @@ public class Enemy {
 	}
 	public String getName()
 	{
-		return this.Location;
+		return this.Name;
 	}
 }
