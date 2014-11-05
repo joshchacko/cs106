@@ -24,7 +24,6 @@ public class CalcTool {
 		try {
 			filereader = new Scanner(new File("/Users/Josh/Desktop/input.txt"));
 		} catch (FileNotFoundException e) {
-			// Nah Nigga
 			e.printStackTrace();
 		}
 
@@ -36,8 +35,36 @@ public class CalcTool {
 			// Determine account type
 			String accountType = filereader.next(); 
 			if (accountType.equals("Credit")) {
-				System.out.println(filereader.next());
+				
 			}
+				// skip word "card"
+				// if opening
+			if (accountType.equals("Opening")){
+				
+			}
+					// skip word "balance"
+					// read amount and add to credit balance
+				// else if deposit
+					// read amount and add to credit balance
+				// else if withdrawal
+					// read amount and subtract from credit balance
+			
+			// else if checking
+				// if opening
+					// skip word "balance"
+					// read amount and add to credit balance
+				// else if deposit
+					// read amount and add to credit balance
+				// else if withdrawal
+					// read amount and subtract from credit balance
+			// else if savings
+				// if opening
+					// skip word "balance"
+					// read amount and add to credit balance
+				// else if deposit
+					// read amount and add to credit balance
+				// else if withdrawal
+					// read amount and subtract from credit balance
 		}
 
 		// if(filereader.hasNext("Checking"));

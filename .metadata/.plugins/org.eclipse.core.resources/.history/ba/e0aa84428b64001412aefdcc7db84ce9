@@ -1,0 +1,39 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+
+public class Toolbox {
+	
+	public static Enemy[] init(){
+		int l = 0;
+		int j = 0;
+	Scanner filereader = null;
+	try {
+		filereader = new Scanner(new File("/Users/Josh/Desktop/locations.txt"));
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	}
+	while(filereader.hasNext()) {
+		System.out.println("stuck");
+		l++;
+	}
+   
+Enemy[]e = new Enemy [l];
+   
+    while(filereader.hasNext()){
+    	String Name = filereader.next(); 
+    	String Location = filereader.next(); 
+    	
+        Enemy f = new Enemy(Name, Location);
+        e[j]= f;
+        j++;
+    }
+    filereader.close();
+    return e;
+	}
+
+
+}
+
+	

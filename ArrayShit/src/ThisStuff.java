@@ -17,15 +17,12 @@ public class ThisStuff {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner filereader = null;
-		try {
-			filereader = new Scanner(new File("/Users/Josh/Desktop/97MFTCL.dat"));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		while (filereader.hasNext()) {
+		Enemy[] enemy = Toolbox.init();
+		System.out.println(enemy[0].getName());
+	
 			
-		}
+		
+		
 	}
 
 }
