@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+
+
+public class LinkedLis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	LinkedList<String> cheese = new LinkedList<String>();
+	
+	cheese.add("Apple");
+	cheese.add("Banana");
+	cheese.add("Carrot");
+	cheese.add("Durian");
+	cheese.add("Grapes");
+	
+		for(String f: cheese) {
+			System.out.println(f);
+			
+		}
+			
+	}
+
+}

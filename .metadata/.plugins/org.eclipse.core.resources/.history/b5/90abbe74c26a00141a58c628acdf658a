@@ -1,0 +1,25 @@
+
+
+/**
+ * 
+ */
+
+/**
+ * @author Josh
+ *
+ */
+public class Mainlist {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Mainlist<Integer> cheese = new Mainlist<Integer>();
+		
+		
+		
+	}
+
+}

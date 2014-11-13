@@ -1,0 +1,21 @@
+import java.util.TreeSet;
+
+
+public class MySet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TreeSet<String> cheese = new TreeSet<String>();
+		
+		cheese.add("Link");
+		cheese.add("Kirby");
+		cheese.add("Zelda");
+		cheese.add("Mewtwo");
+		cheese.add("Solid Snake");
+		
+		System.out.println("Which of these " + cheese.size + " Smash Bro's characters are NOT in the new smash bros?"");
+		
+	}
+
+}

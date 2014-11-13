@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+//List list = Collections.synchronizedList(new LinkedList(...));
+// SortedSet s = Collections.synchronizedSortedSet(new TreeSet(...));
+//for (Integer number : arrlist) {
+//System.out.println("Number = " + number);
+public class TheList {
+	public static void main(String[] args){
+		
+		ArrayList<Integer> cheese = new ArrayList<Integer>();
+		
+		
+		cheese.add(42);
+		cheese.add(14);
+		cheese.add(7);
+		cheese.add(22);
+		cheese.add(30);
+		
+		System.out.println("The current list size is " + cheese.size());
+		for (Integer wine : cheese) {
+			System.out.println("Number = " + wine);
+		}
+	}
+}

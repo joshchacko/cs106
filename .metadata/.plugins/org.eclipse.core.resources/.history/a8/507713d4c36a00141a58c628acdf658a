@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+
+public class TheList {
+	public static void main(String[] args){
+		
+		ArrayList<Integer> cheese = new ArrayList<Integer>(7);
+		
+		
+		cheese.add(42);
+		cheese.add(14);
+		cheese.add(7);
+		
+		System.out.println("The current number is" + cheese.size());
+		
+		
+	}
+}
