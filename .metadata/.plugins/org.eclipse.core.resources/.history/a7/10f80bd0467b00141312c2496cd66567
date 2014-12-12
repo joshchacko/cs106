@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Queue;
+
+import javax.management.Query;
+
+//List list = Collections.synchronizedList(new LinkedList(...));
+// SortedSet s = Collections.synchronizedSortedSet(new TreeSet(...));
+//for (Integer number : arrlist) {
+//System.out.println("Number = " + number);
+public class TheList {
+	public static void main(String[] args){
+		
+		Queue<String> cheese = new Queue<String>();
+		
+		
+		myQueue.add("Brie");
+		myQueue.add("Larks");
+		myQueue.add("Cherry");
+		myQueue.add("Gouda");
+		myQueue.add("Sackies");
+		
+		
+		while(myQueue.size() < 0){
+			System.out.println(myQueue.remove());
+		}
+	
+		
+}}
