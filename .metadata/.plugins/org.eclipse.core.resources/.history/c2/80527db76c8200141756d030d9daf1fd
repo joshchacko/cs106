@@ -23,7 +23,11 @@ public class CalcTool {
 		double amount = 0.0;
 		String trans;
 		Scanner filereader = null;
-		
+		try {
+			filereader = new Scanner(new File("/Users/Josh/Desktop/input.txt"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 
 		while (filereader.hasNext()) {
 
