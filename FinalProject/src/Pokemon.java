@@ -1,39 +1,72 @@
 
 public class Pokemon {
 	private String name;
+	private int HP;
 	private int attack;
 	private int defense;
 	private int spatk;
 	private int spdef;
 	private int speed;
-	private int total;
-	private String type1;
-	private String type2;
+	private int total; 
+	private String type;
+
 	
 	//Defining all of the possible types
-	public void setType1(String type1){
+	/**
+	 * @param type1
+	 */
+	public void setType(String type){
 		String possibleTypes[] = {"Grass", "Electric", "Fire", "Water" , "Dragon", "Fairy", "Poison", "Dark", "Steel", "Ice", "Flying" , "Fighting", "Psychic", "Ghost", "Bug", "Rock", "Ground"};                     
 				for(int i = 0; i < possibleTypes.length; i++){
-					if(type1.equals(possibleTypes[i])){
-						this.type1 = possibleTypes[i];
+					if(type.equals(possibleTypes[i])){
+						this.type = possibleTypes[i];
 							return;
 					}
 				}	
 						//this will keep you from entering an invalid type, and will redirect you to the fairy type. 
-						type1 = possibleTypes[5];
+						type = possibleTypes[5];
 		}
-	//Defining the second set of types 			
-	public void setType2(String type2){
-		String possibleTypes[] = {"Grass", "Electric", "Fire", "Water" , "Dragon", "Fairy", "Poison", "Dark", "Steel", "Ice", "Flying" , "Fighting", "Psychic", "Ghost", "Bug", "Rock", "Ground"};                     
-			for(int i = 0; i < possibleTypes.length; i++){
-				if(type2.equals(possibleTypes[i])){
-					this.type2 = possibleTypes[i];
-						return;
-		}
-	}		
+	public String getName() {
+		return name;
+	}
+	public int getHP() {
+		return HP;
+	}
+	public int getAttack() {
+		return attack;
+	}
+	public int getDefense() {
+		return defense;
+	}
+	public int getSpatk() {
+		return spatk;
+	}
+	public int getSpdef() {
+		return spdef;
+	}
+	public int getSpeed() {
+		return speed;
+	}
+	public int getTotal() {
+		return total;
+	}
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * 		
+	 */
+	//public void setType2(String type2){
+		//String possibleTypes[] = {"Grass", "Electric", "Fire", "Water" , "Dragon", "Fairy", "Poison", "Dark", "Steel", "Ice", "Flying" , "Fighting", "Psychic", "Ghost", "Bug", "Rock", "Ground"};                     
+			//for(int i = 0; i < possibleTypes.length; i++){
+				//if(type2.equals(possibleTypes[i])){
+					//this.type2 = possibleTypes[i];
+						//return;
+		
+		
 					//this will keep you from entering an invalid type, and will redirect you to the steel type.
-			 		type2 = possibleTypes[8];
-}	
+			 		//type2 = possibleTypes[8];	
 					 
 	
 	
@@ -41,14 +74,14 @@ public class Pokemon {
 	 * Constructed name, attack, defense, spatk,spdef,speed, and total parameters.
 	 * Will sort them, and then utilize these parameters to create teams. 
 	 */
-	public Pokemon(String name2, int attack2, int defense2, int spAtk2, int spDef2, int speed2, int total2, String type12) {
+	public Pokemon(String name,int HP, int attack, int defense, int spatk, int spdef, int speed, int total, String type) {
 		this.name = name;
+		this.HP = HP;
 		this.attack = attack;
 		this.defense = defense; 
 		this.spatk = spatk;
 		this.spdef = spdef;
 		this.speed = speed; 
-		this.total = total;
 	}
 	
 
@@ -125,5 +158,9 @@ public class Pokemon {
 		Pokemon k = pkmns[i];
 			pkmns [i] = pkmns[j];
 				pkmns [j] = k;
-	}}
+	}
+	public String toString(){
+		return "" + this.name + " " + this.HP + " " + this.attack + " " + this.defense + " " + this.spatk + " " + this.spdef + " " + this.speed + " " + this.total + " " + this.type;
+	}
+}
 	

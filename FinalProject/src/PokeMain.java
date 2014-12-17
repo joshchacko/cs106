@@ -1,16 +1,25 @@
 
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class PokeMain {
+	public static ArrayList<Pokemon> Pkmn = new ArrayList<Pokemon>();
 	
 	/*
-	 * This will keep the program running, and propmt the user to input to the next line
+	 * This will keep the program running, and prompt the user to input to the next line
 	 * "stop" will prompt a break, which will force terminate the program.S
 	 */
 	public static void main(String[] args){
 		//lets you put multiple commands in one run
 		boolean running = true; 
 		Scanner keyboard = new Scanner(System.in);
-		
+		try {
+			BigList.statRead();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	print();
 		while(running){
 			System.out.println("What is your move?");
 			String command = keyboard.nextLine();
@@ -22,5 +31,10 @@ public class PokeMain {
 	
 	}
 }
+	public static void print(){
+		for(int i = 0; i < Pkmn.size(); i++){
+			System.out.println(Pkmn.get(i));
+		}
+	}
 }
 	
