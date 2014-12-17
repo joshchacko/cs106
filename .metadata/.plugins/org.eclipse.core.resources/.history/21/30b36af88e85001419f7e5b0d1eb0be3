@@ -48,7 +48,6 @@ public class Pokemon {
 		return speed;
 	}
 	public int getTotal() {
-		return total;
 	}
 	public String getType() {
 		return type;
@@ -89,7 +88,7 @@ public class Pokemon {
 
 
 	
-	/**
+	/*
 	 * Using a bubble sort method
 	 * This will sort my stat parameters, making it easy to pull a top 6 Stats. 
 	 */

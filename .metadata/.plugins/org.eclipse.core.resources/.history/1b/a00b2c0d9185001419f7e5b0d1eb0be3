@@ -36,6 +36,11 @@ public class PokeInput {
 					System.out.println("I want to beat Blue");
 					System.out.println("I want to beat Red");
 					System.out.println("I want a team that is strong");
+					System.out.println("d");
+					System.out.println("d");
+					System.out.println("d");
+					System.out.println("d");
+					System.out.println("d");
 				}
 				
 				else if(answers.equals("Brock")){
@@ -89,7 +94,7 @@ public class PokeInput {
 		ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 		ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
 		for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-			if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
+			if(PokeMain.Pkmn.get(i).getType1().equals("Grass")||PokeMain.Pkmn.get(i).getType1().equals("Water")||PokeMain.Pkmn.get(i).getType1().equals("Fighting")){
 				pokedex.add(PokeMain.Pkmn.get(i));
 				}
 			}
@@ -107,12 +112,12 @@ public class PokeInput {
 					ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 					ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
 					for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-						if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
+						if(PokeMain.Pkmn.get(i).getType1().equals("Grass")||PokeMain.Pkmn.get(i).getType1().equals("Water")||PokeMain.Pkmn.get(i).getType1().equals("Fighting")){
 							pokedex.add(PokeMain.Pkmn.get(i));
 							}
 						}
 						Random rand = new Random();
-						for(int j = 0; j < 6; j++){
+						for(int i = 0; i < 6; i++){
 							roster.add(pokedex.get(rand.nextInt(pokedex.size())));
 						}
 						return roster;
@@ -123,26 +128,27 @@ public class PokeInput {
 								//Make second array list 
 								ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 								ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-								for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-									if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-										pokedex.add(PokeMain.Pkmn.get(i));
+								for(int i = 0; i < BigList.Pkmn.size(); i++){
+									if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+										pokedex.add(BigList.Pkmn.get(i));
 										}
 									}
 									Random rand = new Random();
 									for(int i = 0; i < 6; i++){
 										roster.add(pokedex.get(rand.nextInt(pokedex.size())));
 									}
-									return roster;			
-								}		
+									return roster;
+							}
+									
 							
 		//I want to beat Erica!
 										public static ArrayList<Pokemon> Erica(){
 											//Make second array list 
 											ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 											ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-											for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-												if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-													pokedex.add(PokeMain.Pkmn.get(i));
+											for(int i = 0; i < BigList.Pkmn.size(); i++){
+												if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+													pokedex.add(BigList.Pkmn.get(i));
 													}
 												}
 												Random rand = new Random();
@@ -157,9 +163,9 @@ public class PokeInput {
 														//Make second array list 
 														ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 														ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-														for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-															if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																pokedex.add(PokeMain.Pkmn.get(i));
+														for(int i = 0; i < BigList.Pkmn.size(); i++){
+															if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																pokedex.add(BigList.Pkmn.get(i));
 																}
 															}
 															Random rand = new Random();
@@ -174,9 +180,9 @@ public class PokeInput {
 																	//Make second array list 
 																	ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 																	ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-																	for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-																		if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																			pokedex.add(PokeMain.Pkmn.get(i));
+																	for(int i = 0; i < BigList.Pkmn.size(); i++){
+																		if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																			pokedex.add(BigList.Pkmn.get(i));
 																			}
 																		}
 																		Random rand = new Random();
@@ -191,9 +197,9 @@ public class PokeInput {
 																				//Make second array list 
 																				ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 																				ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-																				for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-																					if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																						pokedex.add(PokeMain.Pkmn.get(i));
+																				for(int i = 0; i < BigList.Pkmn.size(); i++){
+																					if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																						pokedex.add(BigList.Pkmn.get(i));
 																						}
 																					}
 																					Random rand = new Random();
@@ -208,9 +214,9 @@ public class PokeInput {
 																							//Make second array list 
 																							ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 																							ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-																							for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-																								if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																									pokedex.add(PokeMain.Pkmn.get(i));
+																							for(int i = 0; i < BigList.Pkmn.size(); i++){
+																								if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																									pokedex.add(BigList.Pkmn.get(i));
 																									}
 																								}
 																								Random rand = new Random();
@@ -224,9 +230,9 @@ public class PokeInput {
 																										//Make second array list 
 																										ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 																										ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-																										for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-																											if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																												pokedex.add(PokeMain.Pkmn.get(i));
+																										for(int i = 0; i < BigList.Pkmn.size(); i++){
+																											if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																												pokedex.add(BigList.Pkmn.get(i));
 																												}
 																											}
 																											Random rand = new Random();
@@ -241,9 +247,9 @@ public class PokeInput {
 																													//Make second array list 
 																													ArrayList<Pokemon> roster = new ArrayList<Pokemon>(); 
 																													ArrayList<Pokemon> pokedex = new ArrayList<Pokemon>();
-																													for(int i = 0; i < PokeMain.Pkmn.size(); i++){
-																														if(PokeMain.Pkmn.get(i).getType().equals("Grass")||PokeMain.Pkmn.get(i).getType().equals("Water")||PokeMain.Pkmn.get(i).getType().equals("Fighting")){
-																															pokedex.add(PokeMain.Pkmn.get(i));
+																													for(int i = 0; i < BigList.Pkmn.size(); i++){
+																														if(BigList.Pkmn.get(i).equals("Grass")||BigList.Pkmn.get(i).equals("Water")||BigList.Pkmn.get(i).equals("Fighting")){
+																															pokedex.add(BigList.Pkmn.get(i));
 																															}
 																														}
 																														Random rand = new Random();
