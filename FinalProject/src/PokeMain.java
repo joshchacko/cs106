@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class PokeMain {
 	public static ArrayList<Pokemon> Pkmn = new ArrayList<Pokemon>();
 	
-	/*
-	 * This will keep the program running, and prompt the user to input to the next line
-	 * "stop" will prompt a break, which will force terminate the program.S
+	/**
+	 * @param running: I created a boolean to determine that while running is true, it will print the original prompt and continue to prompt the user for input. 
+	 *
 	 */
 	public static void main(String[] args){
-		//lets you put multiple commands in one run
 		boolean running = true; 
 		Scanner keyboard = new Scanner(System.in);
 		try {
@@ -21,7 +20,9 @@ public class PokeMain {
 		}
 	print();
 		while(running){
-			System.out.println("What is your move?");
+			System.out.println("Who would you like to beat? ");
+			System.out.println("  ");
+			System.out.println("Enter list for a list of trainers I can help you with.");
 			String command = keyboard.nextLine();
 			PokeInput input = new PokeInput(command);
 			if(command.equals("Stop")){
@@ -33,7 +34,7 @@ public class PokeMain {
 }
 	public static void print(){
 		for(int i = 0; i < Pkmn.size(); i++){
-			System.out.println(Pkmn.get(i));
+		
 		}
 	}
 }
