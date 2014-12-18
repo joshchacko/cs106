@@ -47,34 +47,34 @@ public class PokeInput {
 			System.out.println("I want to beat Blaine");
 		}
 
-		else if (answers.equalsIgnoreCase("Brock")) {
+		else if (answers.equals("Brock")) {
 			boomerang = Brock();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Misty")) {
+		} else if (answers.equals("Misty")) {
 
 			boomerang = Misty();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Surge")) {
+		} else if (answers.equals("Surge")) {
 
 			boomerang = Surge();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Erica")) {
+		} else if (answers.equals("Erica")) {
 
 			boomerang = Erica();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Sabrina")) {
+		} else if (answers.equals("Sabrina")) {
 
 			boomerang = Sabrina();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Koga")) {
+		} else if (answers.equals("Koga")) {
 
 			boomerang = Koga();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Blaine")) {
+		} else if (answers.equals("Blaine")) {
 
 			boomerang = Blaine();
 			System.out.println("Go team!" + boomerang);
-		} else if (answers.equalsIgnoreCase("Giovanni")) {
+		} else if (answers.equals("Giovanni")) {
 
 			boomerang = Giovanni();
 			System.out.println("Go team!" + boomerang);
